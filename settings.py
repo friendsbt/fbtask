@@ -335,9 +335,8 @@ SOUTH_TESTS_MIGRATE = False
 VERIFIER_EXPIRE_DAYS = 3
 AVATAR_AUTO_GENERATE_SIZES = (16, 32, 48, 128) #change if avatars are sized differently
 
-#CORS_ORIGIN_WHITELIST = (
-#    'study.friendsbt.com'
-#)
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+    'study.friendsbt.com'
+)
 CORS_ALLOW_CREDENTIALS = True
 CORS_REPLACE_HTTPS_REFERER = True
