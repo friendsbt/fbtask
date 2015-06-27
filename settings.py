@@ -73,7 +73,8 @@ SITE_ID = 1
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
-LANGUAGE_CODE = 'en'
+#LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'zh_CN'
 
 # Absolute path to the directory that holds uploaded media
 # Example: "/home/media/media.lawrence.com/"
@@ -109,6 +110,10 @@ MIDDLEWARE_CLASSES = (
     ## language selection in the site settings.
     #'askbot.middleware.locale.LocaleMiddleware',
     #'django.middleware.cache.UpdateCacheMiddleware',
+
+    # CORS
+    'corsheaders.middleware.CorsMiddleware',
+
     'django.middleware.common.CommonMiddleware',
     #'django.middleware.cache.FetchFromCacheMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -190,6 +195,9 @@ INSTALLED_APPS = (
     'tinymce',
     'group_messaging',
     #'avatar',#experimental use git clone git://github.com/ericflo/django-avatar.git$
+    
+    # support CORS
+    'corsheaders',
 )
 
 
@@ -326,3 +334,10 @@ SOUTH_TESTS_MIGRATE = False
 
 VERIFIER_EXPIRE_DAYS = 3
 AVATAR_AUTO_GENERATE_SIZES = (16, 32, 48, 128) #change if avatars are sized differently
+
+#CORS_ORIGIN_WHITELIST = (
+#    'study.friendsbt.com'
+#)
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_REPLACE_HTTPS_REFERER = True
