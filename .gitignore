@@ -120,4 +120,6 @@ target/
 pyvenv.cfg
 pip-selfcheck.json
 
+static/CACHE
 
+!log

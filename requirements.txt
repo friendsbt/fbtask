@@ -1,4 +1,4 @@
--e https://github.com/friendsbt/askbot-devel.git
+-e git+https://github.com/friendsbt/askbot-devel.git#egg=askbot-devel
 psycopg2
 django-cors-headers
 uwsgi
