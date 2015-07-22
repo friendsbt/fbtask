@@ -80,7 +80,8 @@ LANGUAGE_CODE = 'zh_CN'
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'askbot', 'upfiles')
 MEDIA_URL = '/upfiles/'
-STATIC_URL = '/m/'#this must be different from MEDIA_URL
+# STATIC_URL = '/m/'#this must be different from MEDIA_URL
+STATIC_URL = '//static2.friendsbt.com/m/'
 
 PROJECT_ROOT = os.path.dirname(__file__)
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
