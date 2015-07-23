@@ -32,6 +32,8 @@ server {
     location /m/ {
         expires 7d;
         alias $PROJECT_ROOT/static/;
+        add_header "Access-Control-Allow-Origin" "*";
+        add_header Cache-Control "public";
         autoindex off;
     }
 
