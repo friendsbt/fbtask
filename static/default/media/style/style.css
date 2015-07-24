@@ -327,7 +327,7 @@ body.user-messages {
 /* ----- Header, check blocks/header.html ----- */
 #header {
   margin-top: 0px;
-  background: #16160f;
+  background: #1abc9c;
   font-family: 'Open Sans Condensed', Arial, sans-serif;
 }
 .content-wrapper {
@@ -405,7 +405,7 @@ body.user-messages {
   text-align: right;
   margin-left: 20px;
   text-decoration: underline;
-  color: #d0e296;
+  color: #FFFFFF;
 }
 #userToolsNav a:first-child {
   margin-left: 0;
@@ -433,7 +433,7 @@ body.user-messages {
   margin-right: 7px;
 }
 #metaNav a {
-  color: #e2e2ae;
+  color: #FFFFFF;
   padding: 0px 0px 0px 35px;
   height: 35px;
   line-height: 25px;
@@ -3506,7 +3506,7 @@ body.question-page ins, body.main-page ins {
   clear: both;
   border-top: 1px solid #000;
   padding: 16px 0 0 0;
-  background: #16160f;
+  background: #1abc9c;
   font-size: 16px;
   font-family: 'Open Sans Condensed', Arial, sans-serif;
 }
@@ -3523,7 +3523,7 @@ body.question-page ins, body.main-page ins {
   float: left;
 }
 .footer-links a {
-  color: #e7e8a8;
+  color: #FFFFFF;
 }
 .powered-link {
   width: 450px;
