@@ -109,7 +109,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     ## Enable the following middleware if you want to enable
     ## language selection in the site settings.
-    #'askbot.middleware.locale.LocaleMiddleware',
+    'askbot.middleware.locale.LocaleMiddleware',
     #'django.middleware.cache.UpdateCacheMiddleware',
 
     # CORS
